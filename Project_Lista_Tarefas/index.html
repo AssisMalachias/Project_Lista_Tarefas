@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Lista de Tarefas</title>
+    <!-- link Cascading Style sheets-->
+        <link rel="stylesheet" href="./src/_css/fonts.css"/>
+        <link rel="stylesheet" href="./src/_css/main.css">
+        <link rel="stylesheet" href="./src/_css/reset.css"/>
+    <!-------------------------------->
+</head>
+<body>
+   <main class="container">
+    <h1><span class="bloco"></span> Lista de Tarefas</h1>
+
+    <form id="form-tarefa">
+      <input type="text" id="input-tarefa" placeholder="Digite o nome da tarefa" required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="tabela-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome da Tarefa</th>
+            <th>Cadastros</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-tarefas">
+          <!-- Itens adicionados aqui -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+    <!--- link Java Script --->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="./src/_js/main.js"></script>
+    <!------------------------>
+</body>
+</html>
